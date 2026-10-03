@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-score=1.0">
+    <title>Week 2 Practical Task - Judith Ozor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Week 2 Practical Task</h1>
+        <p>HTML Forms &mdash; Action &amp; Method</p>
+    </header>
+
+    <main>
+
+    <!-- ==== PART A: Student Registration Form ==== -->
+     <section id="Registration">
+        <h2>Part A &mdash; Student Registration Form</h2>
+
+        <!-- Part B: form uses action="/register" and method="post" -->
+         <form action="/register" method="post">
+
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+            </div>
+
+            <div class="form-group radio-group">
+                <label>Gender</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="nigeria">Nigeria</option>
+                    <option value="ghana">Ghana</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="south-africa">South Africa</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="about">About Yourself</label>
+                <textarea id="about" name="about" placeholder="Tell us a little about yourself"></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms and conditions</label>
+                </div>
+
+                <button type="submit">Register</button>
+
+         </form>
+     </section>
+
+     <!-- ==== Part C: Bonus Search Form ==== -->
+      <section id="Search">
+        <h2>Part C &mdash; Bonus Challenge: Search Form</h2>
+
+        <!-- Uses GET so search terms appear in the URL and can be bookmarked/shared -->
+         <form action="/search" method="get" class="search-form">
+            <input type="text" name="q" placeholder="Search...">
+            <button type="submit">Search</button>
+         </form>
+      </section>
+
+      <!-- ==== PART D: What I Learned ==== -->
+       <section id="what-i-learned" class="answer">
+        <h2>Part D &mdash; What I Learned</h2>
+        <ol>
+            <li>
+                <strong>What does the action attribute do?</strong><br>
+                The <code>action</code> attribute tells the browser where to send the form 
+                when it is submitted &mdash; it points to the URL or server endpoint that will
+                process the form (e.g. <code>/register</code>).
+                </li>
+                <li>
+                  
+                    <strong>What does the method attribute do?</strong><br>
+                    The <code>method</code> attribute defines how the form data is sent to the server. It is usually set to either <code>get</code> or <code>post</code>.
+                </li>
+                <li>
+                    <strong>Why is GET commonly useful for a search form?</strong><br>
+                    GET appends the form data to the URL as query parameters, which makes search results easy to bookmark, share, or revisit, and it works well for requests that only retrieve information rather than change anything on the server.
+                </li>
+                <li>
+                  <strong>Why might POST be used for aregistration form?</strong><br>
+                  POST sends form data in the body of the HTTP request instead of the URL, which is better suited for sensitive or larger amounts of data like passwords and personal details, and it does not clutter or expose the data in the browser's address bar.
+                </li>
+                <li>
+                  <strong>Does using POST automatically make information secure?</strong><br>
+                  No. POST only hides the data from the URL &mdash; it does not encrypt it.
+                  The data can still be intercepted if the connection isn't secured with HTTPS.
+                  True security requires HTTPS, proper server-side validation, and safe handling
+                  of the data once it's received.
+                  </li>
+                  </ol>
+                  </section>
+
+                  </main>
+
+                  <footer>
+                     <p>&copy; 2026 Judith Ozor &mdash; Week 2 Practical Task</p>
+                  </footer>
+
+                </body>
+                </html>

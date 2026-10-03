@@ -1,0 +1,120 @@
+/* ==== Global Styles ==== */
+body  {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #10161c;
+  color: #e7ecf0;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #161e27;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #7fe7c4;
+}
+
+/* ==== Form Container ==== */
+form {
+  background-color: #161e27;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+/* ==== Form Groups ==== */
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+  display:block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #263241;
+    background-color: #10161c;
+    color: #e7ecf0;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* ==== Radio Buttons ==== */
+.radio-group label {
+   display: inline-block;
+   font-weight: normal;
+   margin-right: 20px;
+}
+
+.radio-group input {
+    margin-right: 6px;
+}
+
+/* ==== Checkbox ==== */
+.checkbox-group label  {
+  display: inline;
+  font-weight: normal;
+  margin-left: 6px;
+}
+
+/* ==== Buttons ==== */
+button {
+   background-color: #7fe7c4;
+   color: #10161c;
+   border: none;
+   padding: 10px 22px;
+   border-radius: 4px;
+   font-weight: bold;
+   font-size: 1em;
+   cursor: pointer;
+}
+
+button:hover {
+   background-color: #d9b2bf;
+}
+
+/* ==== Search Form ==== */
+.search-form {
+   display: flex;
+   gap: 10px;
+}
+
+.search-form input[type="text"] {
+   flex: 1;
+}
+
+/* ==== Answers Section ==== */
+.answers {
+  background-color: #161e27;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.answers ol {
+  padding-left: 20px;
+}
+
+.answers li {
+  margin-bottom: 14px;
+}
